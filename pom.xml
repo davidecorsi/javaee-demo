@@ -9,6 +9,8 @@
     <maven.compiler.source>8</maven.compiler.source>
     <maven.compiler.target>8</maven.compiler.target>
     <failOnMissingWebXml>false</failOnMissingWebXml>
+    <sonar.organization>davidecorsi</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   </properties>
   <dependencyManagement>
     <dependencies>
