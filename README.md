@@ -42,7 +42,7 @@ Le api sono protette in questo modo:
 - ***GET api/health*** - non è necessaria l'autenticazione
 
 ***NB: l'autenticazione deve essere fornita tramite BASIC authentication***
-## Scaricare ed impostare application server
+## Scaricare ed impostare l'application server
 - Scaricare un'istanza di `EAP 7.0`
 - Copiare i file `user.properties` e `roles.properties` sotto il path `$JBOSS_HOME/standalone/configuration`
 - Aprire il file `cli.sh`
@@ -52,6 +52,10 @@ Le api sono protette in questo modo:
 Dalla `JBOSS_HOME` lanciare il comando
 ```bash
 ./bin/standalone.sh -c standalone-full.xml
+```
+Dalla root del progetto lanciare il comando
+```bash
+mvn clean wildfly:deploy
 ```
 ## Test
 ```bash
